@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Artisan Bakes - About Us</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="headings.css">
+        <link rel="stylesheet" href="flexbox.css">
+        <link rel="stylesheet" href="footer_elements.css">
+        <link rel="stylesheet" href="message_box.css">
+    </head>
+
+    <body>
+
+        <header>
+            <img class="logo" src="../Pictures/artisan_logo.png">
+            <nav class="navbar">
+                <a href="../Homepage + Login Page/Home Page.html">Home</a><a href="../Recipes/Recipes.html">
+                    Recipes</a><a href="../Services/Services.html">Services</a><a href="About Us.html">About Us</a>
+            </nav>
+        </header>
+
+        <h1>About Us</h1>
+        <br>
+        <p class="paragraph">We at Artisan Bakes aim to make the most authentic pastry recipes around the world
+            accessible to anyone and everyone. Our passion for baking is reflected in every recipe we
+            create. We also offer services that serve desserts made from the freshest and highest quality
+            ingredients. Whether you&rsquo;re looking for a classic croissant or a unique pastry that you&rsquo;ve never
+            tried before, we have something for everyone. We believe that baking is not just about making
+            food, but also about creating memories that last a lifetime.</p>
+        
+        <br>
+        <h1>Contact Us!</h1>
+        <br>
+        <div class="fboxcontainer">
+            <div class="fboxitem"><span class="fboxtext1">See Lok Yen</span>
+                <br><span class="fboxtext2">01x-xxx-xxxx
+                <br>sly@gmail.com</span>
+            </div>
+            
+            <div class="fboxitem"><span class="fboxtext1">Tan Wei Shen</span>
+                <br><span class="fboxtext2">01x-xxx-xxxx
+                <br>tws@gmail.com</span>
+            </div>
+            
+            <div class="fboxitem"><span class="fboxtext1">Yap Jay Ann</span>
+                <br><span class="fboxtext2">01x-xxx-xxxx
+                <br>yja@gmail.com</span>
+            </div>
+            
+            <div class="fboxitem"><span class="fboxtext1">Yeong Meng Li</span>
+                <br><span class="fboxtext2">01x-xxx-xxxx
+                <br>yml@gmail.com</span>
+            </div>
+        </div>
+
+        <messagesection>
+            <div class="message-box">
+                <p>Or drop us a message directly!<sub>Our team will respond within 2 working days.</sub></p>
+                <form class="message-form" onsubmit="return validateForm()">
+                    <input type="text" id="first-name" placeholder="First Name">
+                    <input type="text" id="surname" placeholder="Surname">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea rows="10" id="message" placeholder="Write a message..." required></textarea>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+    
+        </messagesection> 
+
+        <script>
+            function validateForm() {
+                // Get the values entered by the user
+                const firstName = document.getElementById("first-name").value.trim();
+                const surname = document.getElementById("surname").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const message = document.getElementById("message").value.trim();
+            
+                // Perform simple validation
+                if (firstName === "" || surname === "" || email === "" || message === "") {
+                    alert("Please fill out all required fields.");
+                    return false; // Prevent form submission
+                }
+             
+                alert("Your message has been successfully delivered.");
+                return true; // Allow form submission
+            }
+            </script>
+
+        
+        <footer class="footer">
+
+            <div class="footer">
+
+                <h2 class="followText">FOLLOW US ON SOCIAL MEDIA: &nbsp;
+                    <a href="https://twitter.com/"><input class="twitter" type="image" src="../Pictures/twitter_icon.png"></a>
+                    <a href="https://www.instagram.com"><input class="instagram" type="image" src="../Pictures/ig_icon.png"></a>
+                    <a href="https://www.facebook.com"><input class="facebook" type="image" src="../Pictures/facebook_icon.png"></a></h2>
+
+            </div>
+        </footer>
+
+    </body>
+
+
+</html>

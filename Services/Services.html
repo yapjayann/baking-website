@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Artisan Bakes - Services</title>
+  <meta charset="UTF-8"> <!--set character encoding-->
+ <link rel="stylesheet" href="ServiceStyles.css" type="text/css"> <!--link to css stylesheet-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--set viewport-->
+ 
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <!--nav bar elements in unordered list-->
+  <nav class="navbar">
+    <ul>
+      <li class="navitem"><a href="../Homepage + Login Page/Home Page.html">Home</a></li>
+      <li class="navitem"><a href="../Recipes/Recipes.html">Recipes</a></li>
+      <li class="navitem"><a href="Services.html">Services</a></li>
+      <li class="navitem"><a href="../About Us/About Us.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <!--under nav bar-->
+  <!--logo, page heading, clickable social media icons-->
+  <header>
+    <div class="header-content">
+      <h1>Services</h1>
+      <img src="../Pictures/artisan_logo.png" alt="Logo" class="logo">
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="../Pictures/facebook_icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../Pictures/ig_icon.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="../Pictures/twitter_icon.png" alt="Twitter">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <!--4 service containers and their content-->
+  <main>
+    <div class="service-container">
+      <a href="https://example.com/services/customorders" class="service-link">
+        <section class="service">
+          <img src="../Pictures/custom-orders.png" alt="Custom Orders">
+          <div>
+            <h2>CUSTOM ORDERS</h2>
+            <p>For custom cake orders.<br>Please indicate delivery or pickup option.</p>
+          </div>
+        </section>
+      </a>
+
+      <a href="https://example.com/services/consulting" class="service-link">
+        <section class="service">
+          <img src="../Pictures/consulting.png" alt="Consulting Services">
+          <div>
+            <h2>CONSULTING SERVICES</h2>
+            <p>Our baking professionals are happy to assist you in growing your bakery business. 
+              We specialize in menu planning, product design, formulation, manufacturing, and distribution.</p>
+          </div>
+        </section>
+      </a>
+
+      <a href="https://example.com/services/classesworkshops" class="service-link">
+        <section class="service">
+          <img src="../Pictures/baking-workshop.png" alt="Baking Classes and Workshops">
+          <div>
+            <h2>BAKING CLASSES AND WORKSHOPS</h2>
+            <p>Interested to learn the art of cake or pastry-making? Schedule your class with us now!</p>
+          </div>
+        </section>
+      </a>
+
+      <a href="https://example.com/services/catering" class="service-link">
+        <section class="service">
+          <img src="../Pictures/catering.png" alt="Catering Services">
+          <div>
+            <h2>CATERING SERVICES</h2>
+            <p>We provide catering services for formal/informal events such as weddings, birthday celebrations, and corporate gatherings.</p>
+          </div>
+        </section>
+      </a>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="newsletter-section">
+      <div class="newsletter-content">
+        <h2>Sign up for our newsletter!</h2>
+        <p class="newsletter-subtitle">get exclusive baking tips and recipe ideas!</p>
+        <form action="#" method="POST" class="rounded-form" onsubmit="submitForm(event)">
+          <input type="email" name="email" id="email" placeholder="Please enter your email" required> <!--must fill form to submit-->
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+
+
+    <!--Javascript to simulate send form-->
+    <script>
+      function submitForm(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        const emailInput = document.getElementById('email');
+        const email = emailInput.value; 
+        // store in variable email
+
+        // simulate server delay with setTimeout, no server side in this code
+        setTimeout(() => {
+          // Show a popup to indicate successful subscription
+          alert('You have successfully subscribed to our newsletter!');
+        }, 1000); // simulate a 1-second server delay
+
+        // reset the form after submission 
+        event.target.reset();
+      }
+    </script>
+
+  </main>
+</body>
+</html>

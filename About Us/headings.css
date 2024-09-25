@@ -1,0 +1,60 @@
+* {box-sizing: border-box;
+    margin: 0;}
+
+body{background-color: #f6efef; margin-top: 25px; min-width:660px}
+
+.paragraph{
+    max-width: 850px; /*sets the maximum width the words can go*/
+    margin: 0 auto; /*sets its horizontally center*/
+    margin-top: 65px;
+    margin-bottom: 135px; /*reapply the margins*/
+    text-align: center;
+    line-height: 120%;
+    font-family: 'TT Hoves', Verdana, sans-serif;
+    font-size: clamp(1em, 3vw, 1.4em); /*clamp function: (smallest text size, ratio relative to viewport, biggest text size)*/
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 1.5;
+    color: #545454;
+}
+
+.logo{position:absolute;
+    height: 250px;
+    left: 15px;
+    top: -33px; }
+
+.navbar{position: fixed;
+        top: 0;
+        width:100%;
+        max-width: 1800px;
+        font-size: 25px;
+        background-color: #ffffff;
+        text-align: center;
+        font-family: 'TT Hoves', Verdana, sans-serif;
+        color: #000000;}
+
+.navbar a{
+    text-decoration: none;
+    color: #000000;
+    display: inline-block; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+    margin: 0%; 
+    transition: background-color 0.5s ease;
+}
+
+.navbar a:hover{
+    background-color: #F4C4C3;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+h1{
+    display:flex;
+    background-color: #F4C4C3;
+    padding: 48px;
+    font-size: 2.5em;
+    font-family: "Garamond", Tahoma, sans-serif;
+    color: #545454;
+    justify-content: center;
+}

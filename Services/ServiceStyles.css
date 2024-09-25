@@ -1,0 +1,286 @@
+ /***** Body (global) styles *****/
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: #F6EFEF;
+    font-family: "Garamond", Tahoma, sans-serif;
+    color: #545454;
+  }
+
+
+  /***** Navigation styles *****/
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw; /*use relative height instead of absolute height for scalable*/
+    font-size: 2vw;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'TT Hoves', Verdana, sans-serif;
+    color: #000000;
+    z-index: 1; /* set a higher z-index value to overlap the header */
+}
+
+/*spacing between nav items*/
+  .navitem{
+    margin-right: 2vw;
+  }
+
+/*nav item hover effect*/
+  .navitem:hover{
+    background-color: #F4C4C3;
+  }
+
+  /*nav bar unordered list*/
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+/*make the nav links black with no decoration*/
+  .navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5vh;
+  } 
+
+  /***** Header styles *****/
+  header {
+    position: fixed;
+    display: flex;
+    background-color: #F4C4C3;
+    min-width: 100vw;
+    height: 25vh;
+    justify-content: center;
+    top: 0; /* start header from the top of viewport */
+    padding-top: 3vh;
+  }
+
+/*header h1*/
+  h1 {
+    font-size: 5vw;
+    font-family: "Garamond", Tahoma, sans-serif;
+   color: #545454;
+  }
+
+  /*align header items*/
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*artisan bakes logo*/
+  .logo {
+    position: absolute;
+    height: 45vh; /* relative height value */
+    left: 1vw; /* relative left value */
+    top: -6vh; /*  relative top value */
+  }
+
+  /*social icons position and size*/
+  .social-icons {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 19vh;
+    right: 1vw;
+}
+/*set size and margin spacing for each social icon*/
+  .social-icons img {
+    height: 6vh;
+    margin-left: 1vw;
+  }
+
+  /***** Main Content styles *****/
+  /*container in css grid container*/
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2vw;
+    margin: 36vh auto 15vh;
+    padding: 10vh;
+  }
+
+  /*design for each service (in each container)*/
+  .service {
+    background-color: #f2f2f2;
+    padding: 0.5vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid #A8A8A8; /*simple border */
+    height: 35vh; /*set fixed height 35vh for all service containers */
+
+  }
+
+  /*service hover effect*/
+  .service:hover {
+    background-color: #e3e3e3;
+}
+
+/*service images and its sizing*/
+  .service img {
+    width: 16vw;
+    height: 16vw;
+    margin-right: 2vw;
+    object-fit: cover;
+  }
+/*links of each service and the design*/
+  .service-link {
+    text-decoration: none; /* remove the link underline */
+    color: #545454; 
+    cursor: pointer; /* show the pointer cursor when hover */
+    font-family: "Garamond", Tahoma, sans-serif;
+    font-size: 1.5vw;
+  }
+
+  /***** Newsletter Section styles *****/
+  /*footer is for newsletter*/
+  .newsletter-section {
+    background-color: #F4C4C3;
+    padding-top: 10vh;
+    padding-bottom: 17vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  /*text alignment for newsletter content*/
+  .newsletter-content {
+    text-align: center;
+  }
+
+  /*"Sign up for newsletter!" h2*/
+  .newsletter-content h2 {
+    font-size: 4.5vw;
+    margin-bottom: 1vh;
+    color: #FFFFFF;
+    font-family: "Garamond", Tahoma, sans-serif;
+  }
+
+  /*text under h2 in newsletter*/
+  .newsletter-content .newsletter-subtitle {
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+    color: #A87776;
+  }
+
+  /*rounded form class for newsletter button and form*/
+  .rounded-form {
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*make form edges rounded*/
+  .rounded-form input[type="email"] {
+    padding: 1vw;
+    width: 25vw;
+    border-radius: 3vw 0 0 3vw;
+    border: none;
+  }
+
+  /*make button edges rounded*/
+  .rounded-form button[type="submit"] {
+    padding: 1vw 2vw;
+    background-color: #F6EFEF;
+    color: #545454;
+    border: none;
+    border-radius: 0 3vw 3vw 0;
+    cursor: pointer;
+  }
+
+  /*hover over button effect*/
+  .rounded-form button[type="submit"]:hover {
+    background-color: #A87776;
+  }
+
+  /***** media query for viewports with width less than 900px *****/
+  /*need to adjust the following elements' dimensions for different viewport sizes : mobile, tablet etc)*/
+  @media (max-width: 900px) {
+    header {
+      height: 15vh;
+    }
+
+    h1 {
+      font-size: 10vw;
+    }
+
+    .navbar {
+      font-size: 5.5vw;
+    }
+
+    .navitem{margin-right: 1vw;}
+
+    .logo {
+      position: absolute;
+      height: 20vh; 
+      left: -3.5vw; 
+      top: -2.5vh; 
+    }
+
+    .social-icons {
+      top: 12vh;
+      right: 1vw;
+    }
+    .social-icons img {
+      height: 4vh;
+      margin-left: 1vw;
+    }
+    .service-container {
+      grid-template-columns: 1fr; /* Change to single column layout */
+      margin: 10vh auto; 
+    }
+
+    .service {
+      height: auto; /* allow height to adapt to content */
+      padding: 2vw;
+      margin: 3vh auto; 
+      flex-direction: column; /*stack all the image and text vertically*/
+    }
+
+    .service img {
+      width: 40vw;
+      height: auto; /* make image to adapt to container width */
+      margin-right: 0;
+      margin-bottom: 2vw; /* add spacing between image and text */
+    }
+
+    .service-link {
+      font-size: 4vw;
+    }
+  
+
+    .newsletter-section {
+      padding-top: 5vh;
+      padding-bottom: 20vh;
+    }
+
+    .newsletter-content h2 {
+      font-size: 10vw;
+    }
+
+    .newsletter-content .newsletter-subtitle {
+      font-size: 5vw;
+      margin-bottom: 5vw;
+    }
+
+    .rounded-form {
+      border-radius: 3vw;
+    }
+
+    .rounded-form input[type="email"] {
+      padding: 2vw;
+      width: 60vw;
+      border-radius: 3vw 0 0 3vw;
+    }
+
+    .rounded-form button[type="submit"] {
+      padding: 2vw 4vw;
+      border-radius: 0 3vw 3vw 0;
+    }
+  }

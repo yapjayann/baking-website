@@ -1,0 +1,72 @@
+.message-box{
+    width: 100%; 
+    border: 1px solid #D68382;
+    background-color: #D68382;
+    margin: 50px 0; 
+    margin-bottom: 0%;
+    padding: 10px 20px; 
+    font-family: 'poppins', sans-serif; 
+    margin-top: 30px;
+}
+
+.message-box p{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 50px;
+    font-weight: 650;
+    color: white;
+}
+
+.message-box sub{
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.message-form input, .message-form textarea{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding: 15px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    outline: none;
+    font-size: 20px;
+    font-family: 'poppins',sans-serif;
+    border: 1px solid #ffffff;
+    color: #000000;
+}
+
+.message-form input::placeholder, .message-form textarea::placeholder{
+    font-style: italic; 
+    color: #545454;
+}
+.message-form button{
+    padding: 15px 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #F4C4C3;
+    transition: background-color 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+.message-form button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transform: scale(1.1);
+    cursor: pointer;
+}

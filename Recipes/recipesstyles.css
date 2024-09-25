@@ -1,0 +1,199 @@
+ /***** Global styles *****/
+ 
+ /* Reset default margin and padding for various elements */
+ body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6EFEF;
+    color: #000000;
+}
+
+main {
+    margin: 30vh auto; 
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw; /*use relative height instead of absolute height for scalable*/
+    font-size: 2vw;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'TT Hoves', Verdana, sans-serif;
+    color: #000000;
+    z-index: 1; /* set a higher z-index value to overlap the header */
+}
+
+/*spacing between nav items*/
+.navitem{
+    margin-right: 2vw;
+}
+
+/*nav item hover effect*/
+.navitem:hover{
+    background-color: #F4C4C3;
+}
+
+  /*nav bar unordered list*/
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+/*make the nav links black with no decoration*/
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5vh;
+} 
+
+  /***** Header styles *****/
+header {
+    position: fixed;
+    display: flex;
+    background-color: #F4C4C3;
+    min-width: 100vw;
+    height: 25vh;
+    justify-content: center;
+    top: 0; /* start header from the top of viewport */
+    padding-top: 3vh;
+}
+
+/*header h1*/
+h1 {
+    font-size: 5vw;
+    font-family: "Garamond", Tahoma, sans-serif;
+   color: #545454;
+}
+
+  /*align header items*/
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*artisan bakes logo*/
+.logo {
+    position: absolute;
+    height: 45vh; /* relative height value */
+    left: 1vw; /* relative left value */
+    top: -6vh; /*  relative top value */
+}
+
+/*social icons position and size*/
+.social-icons {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 19vh;
+    right: 1vw;
+}
+
+/*set size and margin spacing for each social icon*/
+.social-icons img {
+    height: 6vh;
+    margin-left: 1vw;
+}
+.recipe-category {
+    margin: 20px;
+}
+  
+.recipe-category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.recipe-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipe-box {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+.recipe-box:hover {
+    background-color: #FF759F;
+    color: #FFFFFF;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:#000000
+}
+
+.img-cakes, .img-cookies {
+    width: 200px;
+    height: 300px;
+}
+
+.recipe-title {
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+}
+  
+.recipe-author {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 2px;
+}
+  
+.recipe-date {
+    font-size: 12px;
+    text-align: center;
+}
+
+  /***** media query for viewports with width less than 900px *****/
+  /*need to adjust the following elements' dimensions for different viewport sizes : mobile, tablet etc)*/
+  @media (max-width: 900px) {
+    header {
+      height: 15vh;
+    }
+
+    h1 {
+      font-size: 10vw;
+    }
+
+    main {
+        margin: 20vh auto; 
+    }
+
+    .navbar {
+      font-size: 5.5vw;
+    }
+
+    .navitem{margin-right: 1vw;}
+
+    .logo {
+      position: absolute;
+      height: 20vh; 
+      left: -3.5vw; 
+      top: -2.5vh; 
+    }
+
+    .social-icons {
+      top: 12vh;
+      right: 1vw;
+    }
+    .social-icons img {
+      height: 4vh;
+      margin-left: 1vw;
+    }
+    
+  }

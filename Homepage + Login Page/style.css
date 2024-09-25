@@ -1,0 +1,208 @@
+/* Common styles for both pages */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Homepage specific styles */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width:100%;
+  font-size: 1.5vw;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1.5vw;
+  font-family: 'TT Hoves', Verdana, sans-serif;
+  color: #000000;
+}
+
+.navbar a {
+  margin: 0;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block; 
+  padding-left: 3vw; 
+  padding-right: 3vw; 
+  transition: background-color 0.5s ease;
+}
+
+.navbar a:hover{
+  background-color: #F4C4C3;
+  color: #ffffff;
+  cursor: pointer;
+} 
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 7vw;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 2vw;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.login-button {
+  display: block;
+  width: 30vw;
+  margin: 2vw auto;
+  padding: 1vw;
+  background-color: #faebd7;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2vw;
+  border-radius: 5px;
+}
+
+/* Login page specific styles */
+body.login-page {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 2vw;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1vw;
+  padding: 1vw;
+  border: 0.1vw solid #ccc;
+  border-radius: 0.3vw;
+  font-size: 16px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 1vw;
+  font-weight: bold;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items:center;
+  margin-top: 1vw;
+}
+
+.checkbox-container input {
+  margin: 0; 
+  padding: 0;
+} 
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 0.3px; /* Set the margin between checkbox and text */
+}
+
+.login-button {
+  display: block;
+  width: 100%;
+  margin-top: 2vw;
+  padding: 1vw;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+.navbar {
+  font-size: 3vw;
+  padding: 3vw;
+}
+
+.navbar a {
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+  
+h1 {
+  font-size: 10vw;
+}
+  
+p {
+  font-size: 4vw;
+}
+  
+.login-button {
+  width: 60vw;
+  margin: 5vw auto;
+  padding: 3vw;
+  font-size: 4vw;
+}
+  
+.login-container {
+  padding: 12vw;
+  box-shadow: 0 0 4vw rgba(0, 0, 0, 0.1);
+}
+  
+h2 {
+  margin-bottom: 4vw;
+}
+  
+input {
+  font-size: 3.5vw;
+  margin-bottom: 2vw;
+  padding: 2vw;
+  border-radius: 1vw;
+}
+  
+label {
+  margin-bottom: 2vw;
+}
+  
+.checkbox-container input[type="checkbox"] {
+  margin-right: 0.7vw;
+}
+  
+.login-button {
+  margin-top: 4vw;
+  padding: 2vw;
+  font-size: 3.5vw;
+}
+}
